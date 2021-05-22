@@ -1,0 +1,17 @@
+{
+  "name": "imuneasy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "repository": "git@github.com:lklima/imuneasy.git",
+  "author": "Danilo Machado de Sousa <danilomsou@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
