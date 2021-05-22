@@ -20,5 +20,5 @@
 
 ## Autores
 
-| [<img src="https://github.com/hugomarinhosilva.png?size=115" width=115><br><sub>@hugomarinhosilva</sub>](https://github.com/hugomarinhosilva) | [<img src="https://github.com/lklima.png?size=115" width=115><br><sub>@lklima</sub>](https://github.com/lklima) | [<img src="https://github.com/danilomsou.png?size=115" width=115><br><sub>@danilomsou</sub>](https://github.com/danilomsou) | [<img src="https://github.com/sousaprogramador.png?size=115" width=115><br><sub>@sousaprogramador</sub>](https://github.com/sousaprogramador) |
-| :---: | :---: | :---: | :---: |
+| [<img src="https://github.com/hugomarinhosilva.png?size=115" width=115><br><sub>@hugomarinhosilva</sub>](https://github.com/hugomarinhosilva) | [<img src="https://github.com/lklima.png?size=115" width=115><br><sub>@lklima</sub>](https://github.com/lklima) | [<img src="https://github.com/danilomsou.png?size=115" width=115><br><sub>@danilomsou</sub>](https://github.com/danilomsou) | [<img src="https://github.com/sousaprogramador.png?size=115" width=115><br><sub>@sousaprogramador</sub>](https://github.com/sousaprogramador) | [<img src="https://github.com/Meuriellen.png?size=115" width=115><br><sub>@Meuriellen</sub>](https://github.com/Meuriellen) |
+| :---: | :---: | :---: | :---: | :---: |
