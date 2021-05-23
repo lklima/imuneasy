@@ -8,17 +8,29 @@
 
 ## Motivo
 
+Solução desenvolvida para a Hackathon Cidade Epreendodora
 
-## Documentação
+## Como executar o projeto
 
+Clone o projeto
 
-## Como contribuir
+`git clone https://github.com/lklima/imuneasy.git`
 
+Instale as dependencias
 
-## Termos de Uso
+`npm install`
 
+**App**
+
+Entre na pasta app
+
+`cd packages/app`
+
+Execute o app no emulador ou dispositico conectado android
+
+`npx react-native run-android`
 
 ## Autores
 
 | [<img src="https://github.com/hugomarinhosilva.png?size=115" width=115><br><sub>@hugomarinhosilva</sub>](https://github.com/hugomarinhosilva) | [<img src="https://github.com/lklima.png?size=115" width=115><br><sub>@lklima</sub>](https://github.com/lklima) | [<img src="https://github.com/danilomsou.png?size=115" width=115><br><sub>@danilomsou</sub>](https://github.com/danilomsou) | [<img src="https://github.com/sousaprogramador.png?size=115" width=115><br><sub>@sousaprogramador</sub>](https://github.com/sousaprogramador) | [<img src="https://github.com/Meuriellen.png?size=115" width=115><br><sub>@Meuriellen</sub>](https://github.com/Meuriellen) |
-| :---: | :---: | :---: | :---: | :---: |
+| :-------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: |
