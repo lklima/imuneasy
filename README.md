@@ -8,7 +8,7 @@
 
 ## Motivo
 
-Solução desenvolvida para a Hackathon Cidade Epreendodora
+Solução desenvolvida para a Hackathon Cidade Epreendedora
 
 ## Como executar o projeto
 
