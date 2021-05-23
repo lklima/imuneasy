@@ -42,11 +42,10 @@ export const MenuItemLink = styled.a`
   display: flex;
   align-items: center;
 
-  padding: 10px 0;
+  padding: 10px 15px;
   transition: all .3s;
 
   margin-right: 20px;
-  padding: 15px;
   border-radius: 5px;
 
   font-size: 16px;
