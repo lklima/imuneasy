@@ -1,9 +1,12 @@
+import { useEffect } from 'react';
 import React from 'react';
 import * as GiIcons from 'react-icons/gi';
-
+import socketIOClient from "socket.io-client";
 import * as S from './styles';
 
 import VacineIcon from '../../assets/img/tabler_vaccinevacine.svg'
+import TemperatureIcon from '../../assets/img/temperature.svg'
+import HumidityIcon from '../../assets/img/humidity.svg'
 
 export interface IVacine {
   name: string;
@@ -98,6 +101,12 @@ const ubslist: IUBS[] = [
 ]
 
 export const Dashboard: React.FC = () => {
+  useEffect(() => {
+    const socket = socketIOClient('http://127.0.0.1:4001');
+    socket.on("findAllMonitoring", data => {
+      console.log(data);
+    });
+  }, [])
   return (
     <S.Container>
       <S.PanelContainer>
@@ -165,6 +174,16 @@ export const Dashboard: React.FC = () => {
           ubslist && ubslist.map((ubs: IUBS) => (
             <S.CardUBS statusCard={ubs.status_card} key={ubs.id}>
               <h4>{ubs.name}</h4>
+              <div className="content">
+                <div className="temperature">
+                  <img src={TemperatureIcon} />
+                  <span>4° C</span>
+                </div>
+                <div className="humidity">
+                  <img src={HumidityIcon} />
+                  <span>31%</span>
+                </div>
+              </div>
             </S.CardUBS>
           ))
         }

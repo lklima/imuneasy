@@ -14,19 +14,51 @@ Clone o projeto
 
 `git clone https://github.com/lklima/imuneasy.git`
 
-Instale as dependencias
-
-`npm install`
-
 **App**
 
 Entre na pasta app
 
 `cd packages/app`
 
+Instale as dependencias
+
+`npm install`
+
 Execute o app no emulador ou dispositico conectado android
 
 `npx react-native run-android`
+
+**API**
+
+Entre na pasta da api
+
+`cd packages/api`
+
+Instale as dependencias
+
+`npm install`
+
+Execute o docker-compose para criar o container do banco de dados postgres
+
+`npx react-native run-android`
+
+Execute a API
+
+`npm run start:dev`
+
+**WEB**
+
+Entre na pasta da aplicação Web
+
+`cd packages/web`
+
+Instale as dependencias
+
+`npm install`
+
+Execute a aplicação Web
+
+`npm run start`
 
 ## Autores
 

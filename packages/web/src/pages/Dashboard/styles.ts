@@ -122,4 +122,35 @@ export const CardUBS = styled.div<CardUBSProps>`
   border-left: solid 14px ${props => props.statusCard};
   border-radius: 10px;
   flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  > h4 {
+    color: #000;
+  }
+
+  > .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-top: 5px;
+
+      > span {
+        color: #000;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
 `
