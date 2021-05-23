@@ -13,7 +13,8 @@ export const Header = styled.header`
 
   height: 70px;
 
-  > svg {
+  > img {
+    max-width: 100px;
     margin-left: 20px;
     font-size: 25px;
     color: #F00;

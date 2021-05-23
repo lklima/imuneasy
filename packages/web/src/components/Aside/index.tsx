@@ -4,12 +4,13 @@ import * as AiIcons from 'react-icons/ai';
 import * as GiIcons from 'react-icons/gi';
 import * as S from './styles';
 
+import logo from '../../assets/img/imunEasylogo.svg';
+
 export const Aside: React.FC = () => {
   return (
     <S.Container>
       <S.Header>
-        <GiIcons.GiLoveInjection />
-        <S.Title>ImunEasy</S.Title>
+        <img src={logo} alt="" />
       </S.Header>
 
       <S.MenuContainer>
@@ -17,17 +18,25 @@ export const Aside: React.FC = () => {
           <AiIcons.AiOutlineDashboard />
           Dashboard
         </S.MenuItemLink>
+        <S.MenuItemLink href="/attendance">
+          <AiIcons.AiOutlineCarryOut />
+          Atendimento
+        </S.MenuItemLink>
         <S.MenuItemLink href="/campaigns">
           <AiIcons.AiOutlinePlusSquare />
           Campanhas
         </S.MenuItemLink>
-        <S.MenuItemLink href="/stock">
+        <S.MenuItemLink href="/stocks">
           <AiIcons.AiOutlineStock />
           Estoque
         </S.MenuItemLink>
-        <S.MenuItemLink href="/register">
+        <S.MenuItemLink href="/users">
           <AiIcons.AiOutlineUserAdd />
-          Cadastro
+          Usuários
+        </S.MenuItemLink>
+        <S.MenuItemLink href="/units">
+          <AiIcons.AiOutlineTable />
+          Unidades
         </S.MenuItemLink>
         <S.MenuItemButton onClick={() => {}}>
           <MdIcons.MdExitToApp />
