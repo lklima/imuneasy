@@ -13,7 +13,8 @@ export const Header = styled.header`
 
   height: 70px;
 
-  > svg {
+  > img {
+    max-width: 100px;
     margin-left: 20px;
     font-size: 25px;
     color: #F00;
@@ -42,11 +43,10 @@ export const MenuItemLink = styled.a`
   display: flex;
   align-items: center;
 
-  padding: 10px 0;
+  padding: 10px 15px;
   transition: all .3s;
 
   margin-right: 20px;
-  padding: 15px;
   border-radius: 5px;
 
   font-size: 16px;
