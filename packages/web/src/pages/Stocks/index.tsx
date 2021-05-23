@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import * as AiIcons from 'react-icons/ai';
 
 import * as S from './styles';
 
@@ -54,9 +54,18 @@ export const Stocks: React.FC = () => {
                   <span className="value">{stocks_item.total}</span>
                 </div>
                 <S.TableItemButtonWrapper>
-                  <S.TableItemButton color="#9DE686">Histórico</S.TableItemButton>
-                  <S.TableItemButton color="#ACB9FF">Movimentar</S.TableItemButton>
-                  <S.TableItemButton color="#FF0000">Excluir</S.TableItemButton>
+                  <S.TableItemButton color="#9DE686">
+                    <AiIcons.AiOutlineHistory size={15} />
+                    Histórico
+                  </S.TableItemButton>
+                  <S.TableItemButton color="#ACB9FF">
+                    <AiIcons.AiOutlineArrowsAlt size={15} />
+                    Movimentar
+                    </S.TableItemButton>
+                  <S.TableItemButton color="#FF0000">
+                    <AiIcons.AiOutlineDelete size={15} />
+                    Excluir
+                  </S.TableItemButton>
                 </S.TableItemButtonWrapper>
               </S.TableItemContent>
             </S.TableItem>

@@ -100,10 +100,18 @@ export const TableItemButtonWrapper = styled.div`
 `;
 
 export const TableItemButton = styled.button<TableItemButtonProps>`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: ${props => props.color};
   border-radius: 6px;
   color: #FFF;
   margin-right: 10px;
   min-width: 80px;
   padding: 5px;
+
+  > svg {
+    margin-right: 5px;
+  }
 `;

@@ -18,6 +18,7 @@ export interface IUBS {
   name: string;
   temperature: number;
   humidity: number;
+  status_card: S.StatusCard;
 }
 
 const vacines: IVacine[] = [
@@ -70,25 +71,29 @@ const ubslist: IUBS[] = [
     id: 1,
     name: 'UBS MARIA DOS REIS',
     temperature: 4,
-    humidity: 31
+    humidity: 31,
+    status_card: S.StatusCard.ERROR
   },
   {
     id: 2,
     name: 'UBS JOSE DE SOUSA REZENDE',
     temperature: 4,
-    humidity: 31
+    humidity: 31,
+    status_card: S.StatusCard.WARNING
   },
   {
     id: 3,
     name: 'UBS ALBENY SOARES',
     temperature: 4,
-    humidity: 31
+    humidity: 31,
+    status_card: S.StatusCard.SUCCESS
   },
   {
     id: 4,
     name: 'UBS SENADOR BENEDITO',
     temperature: 4,
-    humidity: 31
+    humidity: 31,
+    status_card: S.StatusCard.SUCCESS
   }
 ]
 
@@ -158,7 +163,7 @@ export const Dashboard: React.FC = () => {
       <S.CardUBSWrapper>
         {
           ubslist && ubslist.map((ubs: IUBS) => (
-            <S.CardUBS statusCard={S.StatusCard.WARNING} key={ubs.id}>
+            <S.CardUBS statusCard={ubs.status_card} key={ubs.id}>
               <h4>{ubs.name}</h4>
             </S.CardUBS>
           ))

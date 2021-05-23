@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
+import * as AiIcons from 'react-icons/ai';
+
 
 import * as S from './styles';
 
@@ -79,8 +81,14 @@ export const Campaigns: React.FC = () => {
                   <span className="value">{campaigns_item.reached}</span>
                 </div>
                 <S.TableItemButtonWrapper>
-                  <S.TableItemButton color="#37C9D3">Editar</S.TableItemButton>
-                  <S.TableItemButton color="#FF0000">Excluir</S.TableItemButton>
+                  <S.TableItemButton color="#37C9D3">
+                    <AiIcons.AiOutlineEdit size={15} />
+                    Editar
+                  </S.TableItemButton>
+                  <S.TableItemButton color="#FF0000">
+                    <AiIcons.AiOutlineDelete size={15} />
+                    Excluir
+                  </S.TableItemButton>
                 </S.TableItemButtonWrapper>
               </S.TableItemContent>
             </S.TableItem>

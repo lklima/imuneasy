@@ -33,10 +33,12 @@ export const PanelContainer = styled.div`
 `;
 
 export const VacineTable = styled.table`
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
   background-color: #FFF;
   color: #000000;
+  height: 100%;
   border-left: solid 14px #24CCD9;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
 
   padding: 27px;
 `;
@@ -53,6 +55,7 @@ export const VacineItemTableTr = styled.tr<VacineItemTableTrProps>`
 export const VacineItemTable = styled.td<VacineItemTableProps>`
   font-size: 16px;
   padding: 5px 0;
+  height: 45px;
   min-width: 120px;
   font-weight: ${props => props.isBold && 'bold'};
 `;
@@ -63,6 +66,7 @@ export const CardContainer = styled.div`
 `;
 
 export const CardVacine = styled.div<CardVacineProps>`
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
   background-color: #FFF;
   width: 100%;
   border-radius: 10px;
@@ -110,8 +114,9 @@ export const CardUBSWrapper = styled.div`
 `;
 
 export const CardUBS = styled.div<CardUBSProps>`
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
   background-color: #FFF;
-  min-width: 220px;
+  min-width: 240px;
   min-height: 120px;
   margin: 5px;
   border-left: solid 14px ${props => props.statusCard};

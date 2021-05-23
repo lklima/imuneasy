@@ -31,11 +31,17 @@ export const Title = styled.h3`
 export const MenuContainer = styled.nav`
   display: flex;
   flex-direction: column;
+  align-content: space-between;
 
   margin-top: 20px;
 `;
 
-export const MenuItemLink = styled.a`
+
+interface MenuItemLinkProps{
+  isActive?: boolean;
+}
+
+export const MenuItemLink = styled.a<MenuItemLinkProps>`
   color: ${ props => props.theme.colors.menuText};
   text-decoration: none;
 
@@ -46,8 +52,8 @@ export const MenuItemLink = styled.a`
   padding: 10px 15px;
   transition: all .3s;
 
-  margin-right: 20px;
-  border-radius: 5px;
+
+  border-right: solid 6px ${ props => props.isActive ? '#E03386' : 'transparent'};
 
   font-size: 16px;
 

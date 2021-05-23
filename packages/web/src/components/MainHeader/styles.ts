@@ -15,18 +15,36 @@ export const Container = styled.div`
 `;
 
 export const Profile = styled.div`
-  color: ${props => props.theme.colors.titleText};
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 `;
 
-export const BackButton = styled.button`
+export const TitlePage = styled.div`
   background-color: transparent;
   display: flex;
   align-items: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 28px;
+  margin-left: 15px;
+  border-bottom: solid 6px #37C9D3;
+  text-transform: uppercase;
 
   > svg {
     font-size: 25px;
   }
 `;
 
-export const Welcome = styled.h3``;
-export const UserName = styled.span``;
+export const Avatar = styled.div`
+  width: 55px;
+  height: 55px;
+  border-radius: 28px;
+  background-color: #37C9D3;
+`;
+export const UserName = styled.span`
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #B0B0B1;
+`;
